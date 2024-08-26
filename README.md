@@ -1,6 +1,4 @@
-Here’s a version of your `README.md` without the color formatting:
 
-```markdown
 # **ksh CLI**
 
 **ksh CLI** is a command-line tool designed for Windows users who want to run bash-like commands directly in PowerShell. Ideal for those familiar with Unix-like systems, `ksh` provides a set of commands that make file and directory management more intuitive and powerful on Windows.
