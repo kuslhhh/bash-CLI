@@ -41,7 +41,7 @@ npm install -g ksh
 
 ## <span style="color:#9C27B0;">License</span>
 
-ISC License - see [LICENSE](LICENSE).
+MIT License - see [LICENSE](LICENSE).
 
 ## <span style="color:#3F51B5;">Author</span>
 
