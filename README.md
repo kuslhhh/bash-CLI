@@ -10,7 +10,7 @@ Whether you’re a developer, system administrator, or just someone who prefers 
 Install `ksh` globally using npm:
 
 ```bash
-npm install -g ksh
+npm i -g ksh-bash
 ```
 
 ## Usage
