@@ -17,28 +17,28 @@ npm i -g ksh-bash
 
 ### Commands
 
-- **`ksh ls [path]`**: List directory contents.
-- **`ksh cat <file>`**: Display file contents.
-- **`ksh echo <text>`**: Print text to the terminal.
-- **`ksh rm <file>`**: Remove a file.
-- **`ksh touch <file>`**: Create an empty file.
-- **`ksh mkdir <dir>`**: Create a directory.
-- **`ksh rmdir <dir>`**: Remove a directory.
-- **`ksh cp <source> <destination>`**: Copy a file.
-- **`ksh mv <source> <destination>`**: Move a file.
-- **`ksh pwd`**: Print the current directory.
-- **`ksh grep <pattern> <file>`**: Search for a pattern in a file.
-- **`ksh clear`**: Clear the terminal.
+- **` ls [path]`**: List directory contents.
+- **` cat <file>`**: Display file contents.
+- **` echo <text>`**: Print text to the terminal.
+- **` rm <file>`**: Remove a file.
+- **` touch <file>`**: Create an empty file.
+- **` mkdir <dir>`**: Create a directory.
+- **` rmdir <dir>`**: Remove a directory.
+- **` cp <source> <destination>`**: Copy a file.
+- **` mv <source> <destination>`**: Move a file.
+- **` pwd`**: Print the current directory.
+- **` grep <pattern> <file>`**: Search for a pattern in a file.
+- **` clear`**: Clear the terminal.
 
 ### Advanced Commands
 
-- **`ksh find <path> <pattern>`**: Find files matching a pattern.
-- **`ksh du <path>`**: Estimate file space usage.
-- **`ksh chmod <permissions> <file>`**: Change file permissions (PowerShell equivalent not directly supported).
-- **`ksh ps`**: List running processes.
-- **`ksh kill <pid>`**: Terminate a process.
-- **`ksh df`**: Show disk space usage.
-- **`ksh top`**: Display top processes by CPU usage.
+- **` find <path> <pattern>`**: Find files matching a pattern.
+- **` du <path>`**: Estimate file space usage.
+- **` chmod <permissions> <file>`**: Change file permissions (PowerShell equivalent not directly supported).
+- **` ps`**: List running processes.
+- **` kill <pid>`**: Terminate a process.
+- **` df`**: Show disk space usage.
+- **` top`**: Display top processes by CPU usage.
 
 ## License
 
