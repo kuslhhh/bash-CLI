@@ -1,7 +1,7 @@
 {
   "name": "ksh-bash",
-  "version": "1.0.1",
-  "description": "A CLI tool to run bash-like commands on Windows PowerShell",
+  "version": "1.0.2",
+  "description": "A CLI tool to run bash-like commands on Windows PowerShell. Note: You may need to set the execution policy to RemoteSigned for scripts to run. See the README for details.",
   "main": "bash.js",
   "scripts": {
     "start": "node bash.js"
@@ -20,5 +20,6 @@
   "dependencies": {
     "commander": "^12.1.0",
     "ksh": "^0.2.5"
-  }
+  },
+  "readme": "This CLI requires PowerShell. If you encounter script execution issues, run the following command in PowerShell (as Administrator):\n\n```powershell\nSet-ExecutionPolicy RemoteSigned\n```\n\nThis will allow scripts to run locally. You can also consider using Git Bash or WSL for a better experience."
 }
