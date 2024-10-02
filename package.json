@@ -1,6 +1,6 @@
 {
   "name": "ksh-bash",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A CLI tool to run bash-like commands on Windows PowerShell",
   "main": "bash.js",
   "scripts": {
