@@ -1,13 +1,18 @@
+# ksh-bash
 
-# **ksh CLI**
+Fast Windows-only CLI that maps bash-like commands to PowerShell with TypeScript + Bun.
 
-**ksh CLI** is a command-line tool designed for Windows users who want to run bash-like commands directly in PowerShell. Ideal for those familiar with Unix-like systems, `ksh` provides a set of commands that make file and directory management more intuitive and powerful on Windows.
+## Highlights
 
-Whether you’re a developer, system administrator, or just someone who prefers a command-line interface, `ksh` can simplify your workflow by offering familiar commands that streamline common tasks.
+- TypeScript with strict mode
+- Modular command registry with lazy command loading
+- `spawn`-based execution for streaming output
+- TTL cache for expensive commands (`du`, `find`, `ps`, `top`) in `.cache/`
+- Debug logging via `--debug`
+- Bundled CLI for fast startup (`tsup`)
+- Vitest tests for cache, commands, and CLI behavior
 
-## Installation
-
-Install `ksh` globally using npm:
+## Install
 
 ```bash
 npm i -g ksh-bash
@@ -15,35 +20,58 @@ npm i -g ksh-bash
 
 ## Usage
 
-### Commands
+```bash
+ksh --help
+ksh --debug ls .
+ksh find . *.ts
+```
 
-- **` ls [path]`**: List directory contents.
-- **` cat <file>`**: Display file contents.
-- **` echo <text>`**: Print text to the terminal.
-- **` rm <file>`**: Remove a file.
-- **` touch <file>`**: Create an empty file.
-- **` mkdir <dir>`**: Create a directory.
-- **` rmdir <dir>`**: Remove a directory.
-- **` cp <source> <destination>`**: Copy a file.
-- **` mv <source> <destination>`**: Move a file.
-- **` pwd`**: Print the current directory.
-- **` grep <pattern> <file>`**: Search for a pattern in a file.
-- **` clear`**: Clear the terminal.
+## Commands
 
-### Advanced Commands
+### File system
 
-- **` find <path> <pattern>`**: Find files matching a pattern.
-- **` du <path>`**: Estimate file space usage.
-- **` chmod <permissions> <file>`**: Change file permissions (PowerShell equivalent not directly supported).
-- **` ps`**: List running processes.
-- **` kill <pid>`**: Terminate a process.
-- **` df`**: Show disk space usage.
-- **` top`**: Display top processes by CPU usage.
+`ls`, `cat`, `touch`, `mkdir`, `rmdir`, `rm`, `cp`, `mv`, `pwd`, `tree`, `stat`, `head`, `tail`, `wc`, `which`
+
+### Search
+
+`grep`, `find`
+
+### System
+
+`ps`, `kill`, `top`, `df`, `du`, `whoami`, `uptime`
+
+### Utilities
+
+`clear`, `echo`, `json`, `base64`, `uuid`, `hash`
+
+## Development
+
+```bash
+bun install
+bun run typecheck
+bun run test
+bun run build
+```
+
+## Project structure
+
+```text
+src/
+  cli.ts
+  commandRegistry.ts
+  commands/
+  shell/
+  cache/
+  utils/
+  types/
+  tests/
+```
+
+## Build output
+
+- CLI binary: `dist/cli.js`
+- npm bin mapping: `ksh -> dist/cli.js`
 
 ## License
 
-MIT License - see [LICENSE](LICENSE).
-
-## Author
-
-Kushal Jadhav
+MIT
